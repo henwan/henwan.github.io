@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>v1</title>
+    <style>.hidden-input {
+      width: 1px;
+      height: 1px;
+      position: absolute !important;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+    }</style>
+  </head>
+<body>
+<form id="mainForm" method="POST" data-form-type="login">
+  <input class="hidden-input" type="password" name="hidden-password" tabindex="-1">
+  <label for="email-text-field" class="screen-readers-only">email</label><br />
+  <input id="email-text-field" autocomplete="off" type="text" value="a@gmail.com" placeholder="email address" class="input-field" name="email" tabindex="1" data-valid="false" data-form-type="email" data-kwimpalastatus="alive"  style="background-color: rgb(255, 255, 204); color: rgb(0, 0, 0);"><br />
+  <label for="password-text-field" class="screen-readers-only">password</label><br />
+  <input id="password-text-field" autocomplete="off" type="password" value="" placeholder="password" class="input-field" name="password" tabindex="2" data-valid="true" data-form-type="password" data-kwimpalastatus="alive" style="background-color: rgb(255, 255, 204); color: rgb(0, 0, 0);"> <br />
+  <input id="continue-hidden-field" autocomplete="" type="hidden" value="https://www.google.com" placeholder="" class="" name="continue" tabindex="undefined"> 
+  <input id="initial-email-hidden-field" autocomplete="" type="hidden" value="a@gmail.com" placeholder="" class="" name="initial-email" tabindex="undefined">
+  <div>
+    <input type="submit" value="Log In" placeholder="undefined" class="btn active-btn" tabindex="3" data-form-type="action,login">
+</div>
+</form>
+</body>
+</html>
